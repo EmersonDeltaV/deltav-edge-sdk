@@ -34,7 +34,7 @@ For more information, please consult the Edge Environment User Guide.
 ### Authentication
 DeltaV.EdgeClient.Authentication
 
-[![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.Authentication)](https://www.nuget.org/packages/DeltaV.EdgeClient.Authentication)
+[![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.Authentication)](https://www.nuget.org/packages/DeltaV.EdgeClient.Authentication) ![NuGet Downloads](https://img.shields.io/nuget/dt/DeltaV.EdgeClient.Authentication)
 
 
 ```
@@ -59,7 +59,7 @@ edgeClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.Aut
 ### Graph
 DeltaV.EdgeClient.Graph
 
-[![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.Graph)](https://www.nuget.org/packages/DeltaV.EdgeClient.Graph)
+[![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.Graph)](https://www.nuget.org/packages/DeltaV.EdgeClient.Graph) ![NuGet Downloads](https://img.shields.io/nuget/dt/DeltaV.EdgeClient.Graph)
 
 ```
 var client = GetAuthenticatedClient(); //see Authentication sample.
@@ -70,7 +70,7 @@ var entity = await client.GetGraphByEntityIdAsync(entityId, propertyList, relati
 ### History
 Emerson.EdgeClient.History
 
-[![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.History)](https://www.nuget.org/packages/DeltaV.EdgeClient.History)
+[![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.History)](https://www.nuget.org/packages/DeltaV.EdgeClient.History) ![NuGet Downloads](https://img.shields.io/nuget/dt/DeltaV.EdgeClient.History)
 
 ```
 var client = GetAuthenticatedClient(); //see Authentication sample.
@@ -81,7 +81,7 @@ var history = await client.GetHistoryByIdAsync(entityId, field);
 ### Alarm and Events
 Emerson.EdgeClient.AE
 
-[![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.AE)](https://www.nuget.org/packages/DeltaV.EdgeClient.AE)
+[![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.AE)](https://www.nuget.org/packages/DeltaV.EdgeClient.AE) ![NuGet Downloads](https://img.shields.io/nuget/dt/DeltaV.EdgeClient.AE)
 
 ```
 var client = GetAuthenticatedClient(); //see Authentication sample.
