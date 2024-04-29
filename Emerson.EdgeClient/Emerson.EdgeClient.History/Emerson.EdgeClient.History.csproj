@@ -1,13 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
+		<PackageId>DeltaV.EdgeClient.History</PackageId>
+		<Title>DeltaV.EdgeClient.History</Title>
+		<Product>DeltaV.EdgeClient.History</Product>
+		<Description>A library use to extract edge nodes historical data.</Description>
+
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AssemblyVersion>0.1.0.0</AssemblyVersion>
+		<FileVersion>0.1.0.0</FileVersion>
+		<PackAsTool>False</PackAsTool>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/EmersonDeltaV/deltav-edge-sdk</PackageProjectUrl>
+		<Company>Fisher-Rosemount Systems, Inc.</Company>
+		<Authors>PSS Technology</Authors>
+		<Version>0.1.0</Version>
+		<RepositoryUrl>https://github.com/EmersonDeltaV/deltav-edge-sdk</RepositoryUrl>
+		<PackageTags>deltav-edge;emerson;deltav</PackageTags>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
 
 </Project>
