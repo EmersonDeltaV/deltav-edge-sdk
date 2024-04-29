@@ -4,11 +4,38 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <PackAsTool>False</PackAsTool>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/EmersonDeltaV/deltav-edge-sdk</PackageProjectUrl>
+    <Company>Fisher-Rosemount Systems, Inc.</Company>
+    <Authors>PSS Technology</Authors>
+    <Version>0.1.0</Version>
+    <Title>DeltaV.EdgeClient.Authentication</Title>
+    <PackageId>DeltaV.EdgeClient.Authentication</PackageId>
+    <Product>DeltaV.EdgeClient.Authentication</Product>
+    <RepositoryUrl>https://github.com/EmersonDeltaV/deltav-edge-sdk</RepositoryUrl>
+    <PackageTags>deltav-edge;emerson;deltav</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Description>A library use to authenticate with DeltaV Edge environment.</Description>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
