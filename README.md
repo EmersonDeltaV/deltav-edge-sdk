@@ -1,19 +1,23 @@
-<h3 align="center">Edge Client SDK</h3>
-
----
+# Edge Client SDK
 
 ## Table of Contents
+- [Edge Client SDK](#edge-client-sdk)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+    - [Authentication](#authentication)
+    - [Graph](#graph)
+    - [History](#history)
+    - [Alarm and Events](#alarm-and-events)
+  - [Authors](#authors)
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Authors](#authors)
-
-## About <a name = "about"></a>
+## About
 
 This repository contains a C# Edge REST API Client SDK implemented via HttpClient to simplify Edge REST API consumption. The currently available Edge endpoints covered in this SDK are Authentication, Graph, History, and Alarm and Events.
 
-## Getting Started <a name = "getting_started"></a>
+## Getting Started
 
 ### Prerequisites
 
@@ -25,7 +29,7 @@ Before working with this SDK, please ensure that you have setup the following wi
 ```
 For more information, please consult the Edge Environment User Guide.
 
-## Usage <a name="usage"></a>
+## Usage
 
 ### Authentication
 Emerson.EdgeClient.Authentication
@@ -75,7 +79,7 @@ var client = GetAuthenticatedClient(); //see Authentication sample.
 var history = await client.GetAeAsync(pageSize, pageNumber);
 ```
 
-## Authors <a name = "authors"></a>
+## Authors
 
 - Lawrence Benitez
 - Peter Balanag
