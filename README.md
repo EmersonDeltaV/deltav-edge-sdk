@@ -2,16 +2,17 @@
 
 # Table of Contents
 - [Edge Client SDK](#edge-client-sdk)
-  - [Table of Contents](#table-of-contents)
-  - [About](#about)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-  - [Usage](#usage)
-    - [Authentication](#authentication)
-    - [Graph](#graph)
-    - [History](#history)
-    - [Alarm and Events](#alarm-and-events)
-  - [Authors](#authors)
+- [Table of Contents](#table-of-contents)
+- [About](#about)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+- [Usage](#usage)
+  - [Authentication](#authentication)
+  - [Graph](#graph)
+  - [History](#history)
+  - [Alarm and Events](#alarm-and-events)
+- [Sample Clients](#sample-clients)
+- [Authors](#authors)
 
 # About
 
