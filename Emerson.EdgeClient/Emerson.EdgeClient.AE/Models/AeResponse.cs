@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Emerson.EdgeClient.AE.Models
+﻿namespace Emerson.EdgeClient.AE.Models
 {
     /// <summary>
     /// Response for Alarms and Events REST API Request
@@ -26,16 +19,20 @@ namespace Emerson.EdgeClient.AE.Models
         /// <summary>
         /// Current page number
         /// </summary>
-        public int CurrentPageNumber { get
+        public int CurrentPageNumber
+        {
+            get
             {
                 return Paging != null ? Paging.CurrentPageNumber : 1;
-            } 
+            }
         }
 
         /// <summary>
         /// Complete URL to move to the next page.
         /// </summary>
-        public string NextPageLink { get
+        public string NextPageLink
+        {
+            get
             {
                 if (Paging != null)
                     return Paging.NextPageLink;
@@ -93,7 +90,7 @@ namespace Emerson.EdgeClient.AE.Models
             get
             {
                 if (Links != null)
-                    return Links.First(p => p.Name == "next").EndPoint;
+                    return Links.FirstOrDefault(p => p.Name == "next")?.EndPoint ?? string.Empty;
                 return string.Empty;
             }
         }
@@ -106,14 +103,14 @@ namespace Emerson.EdgeClient.AE.Models
             get
             {
                 if (Links != null)
-                    return Links.First(p => p.Name == "prev").EndPoint;
+                    return Links.FirstOrDefault(p => p.Name == "prev")?.EndPoint ?? string.Empty;
                 return string.Empty;
             }
         }
 
         public bool HasNextPage
         {
-            get => Links.Any(p => p.Name == "next"); 
+            get => Links.Any(p => p.Name == "next");
         }
 
         public bool HasPreviousPage
