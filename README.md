@@ -1,6 +1,6 @@
 # Edge Client SDK
 
-## Table of Contents
+# Table of Contents
 - [Edge Client SDK](#edge-client-sdk)
   - [Table of Contents](#table-of-contents)
   - [About](#about)
@@ -13,13 +13,13 @@
     - [Alarm and Events](#alarm-and-events)
   - [Authors](#authors)
 
-## About
+# About
 
 This repository contains a C# Edge REST API Client SDK implemented via HttpClient to simplify Edge REST API consumption. The currently available Edge endpoints covered in this SDK are Authentication, Graph, History, and Alarm and Events.
 
-## Getting Started
+# Getting Started
 
-### Prerequisites
+## Prerequisites
 
 Before working with this SDK, please ensure that you have setup the following with your Edge installation:
 
@@ -29,9 +29,9 @@ Before working with this SDK, please ensure that you have setup the following wi
 ```
 For more information, please consult the Edge Environment User Guide.
 
-## Usage
+# Usage
 
-### Authentication
+## Authentication
 DeltaV.EdgeClient.Authentication
 
 [![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.Authentication)](https://www.nuget.org/packages/DeltaV.EdgeClient.Authentication) ![NuGet Downloads](https://img.shields.io/nuget/dt/DeltaV.EdgeClient.Authentication)
@@ -56,7 +56,7 @@ edgeClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.Aut
 
 ```
 
-### Graph
+## Graph
 DeltaV.EdgeClient.Graph
 
 [![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.Graph)](https://www.nuget.org/packages/DeltaV.EdgeClient.Graph) ![NuGet Downloads](https://img.shields.io/nuget/dt/DeltaV.EdgeClient.Graph)
@@ -67,7 +67,7 @@ var client = GetAuthenticatedClient(); //see Authentication sample.
 var entity = await client.GetGraphByEntityIdAsync(entityId, propertyList, relationshipList);
 ```
 
-### History
+## History
 Emerson.EdgeClient.History
 
 [![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.History)](https://www.nuget.org/packages/DeltaV.EdgeClient.History) ![NuGet Downloads](https://img.shields.io/nuget/dt/DeltaV.EdgeClient.History)
@@ -78,7 +78,7 @@ var client = GetAuthenticatedClient(); //see Authentication sample.
 var history = await client.GetHistoryByIdAsync(entityId, field);
 ```
 
-### Alarm and Events
+## Alarm and Events
 Emerson.EdgeClient.AE
 
 [![NuGet Version](https://img.shields.io/nuget/v/DeltaV.EdgeClient.AE)](https://www.nuget.org/packages/DeltaV.EdgeClient.AE) ![NuGet Downloads](https://img.shields.io/nuget/dt/DeltaV.EdgeClient.AE)
@@ -89,7 +89,11 @@ var client = GetAuthenticatedClient(); //see Authentication sample.
 var history = await client.GetAeAsync(pageSize, pageNumber);
 ```
 
-## Authors
+# Sample Clients
+You may check our sample codes to understand how it works.
+  * [ConsoleApp](./samples/ConsoleApp/readme.md)
+
+# Authors
 
 - Lawrence Benitez
 - Peter Balanag
