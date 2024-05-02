@@ -1,8 +1,10 @@
 ﻿using Emerson.EdgeClient.AE;
 using Emerson.EdgeClient.Authentication;
+using Emerson.EdgeClient.Authentication.Models;
 using Emerson.EdgeClient.Graph;
 using Emerson.EdgeClient.History;
 using Newtonsoft.Json;
+using System.Net.Http.Headers;
 
 internal class Program
 {
@@ -54,13 +56,13 @@ internal class Program
         var pass = "pass"; //add your REST API password here
 
         client.BaseAddress = new Uri(edgeUrl);
-        var token = await client.RequestClientTokenAsync(new Emerson.EdgeClient.Authentication.Models.Credentials()
+        var token = await client.RequestClientTokenAsync(new Credentials
         {
             Username = user,
             Password = pass
         });
 
-        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token.AccessToken);
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.AccessToken);
 
         return client;
     }
