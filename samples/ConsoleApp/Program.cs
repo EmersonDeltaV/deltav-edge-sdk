@@ -17,15 +17,15 @@ internal class Program
 
         await GetGraph(client, entityId);
         await GetHistory(client, entityId);
-        await GetAe(client, entityId);
+        await GetAe(client);
     }
 
-    private static async Task GetAe(HttpClient client, string entityId)
+    private static async Task GetAe(HttpClient client)
     {
-        await Console.Out.WriteLineAsync($"GetAeAsync({entityId}) STARTED");
+        await Console.Out.WriteLineAsync($"GetAeAsync STARTED");
         var ae = await client.GetAeAsync(30, 2);
         await Console.Out.WriteLineAsync(JsonConvert.SerializeObject(ae));
-        await Console.Out.WriteLineAsync($"GetAeAsync({entityId}) FINISHED");
+        await Console.Out.WriteLineAsync($"GetAeAsync FINISHED");
     }
 
     private static async Task GetHistory(HttpClient client, string entityId)
@@ -49,6 +49,8 @@ internal class Program
     public static async Task<HttpClient> CreateAuthenticatedHttpClient()
     {
         var handler = new HttpClientHandler();
+        handler.ServerCertificateCustomValidationCallback = (message, cert, chain, policyErrors) => { return true; };
+
         var client = new HttpClient(handler);
 
         var edgeUrl = "https://localhost/edge/"; //add your Edge REST API IP here
