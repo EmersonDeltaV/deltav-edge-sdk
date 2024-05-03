@@ -25,12 +25,12 @@ namespace Emerson.EdgeClient.Authentication
         private static async Task<TokenResponse> RequestTokenAsync(HttpClient client, Credentials credentials, CancellationToken cancellationToken)
         {
             var tokenResponse = new TokenResponse();
-            
+
             var content = new[]
             {
-                    new KeyValuePair<string, string>("Username", credentials.Username),
-                    new KeyValuePair<string, string>("Password", credentials.Password)
-                };
+                new KeyValuePair<string, string>("Username", credentials.Username),
+                new KeyValuePair<string, string>("Password", credentials.Password)
+            };
 
             // Get data response
             var response = await client.PostAsync(authUrl, new FormUrlEncodedContent(content), cancellationToken);
