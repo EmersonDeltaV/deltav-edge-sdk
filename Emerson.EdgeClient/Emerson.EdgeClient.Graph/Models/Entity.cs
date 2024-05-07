@@ -17,8 +17,10 @@ namespace Emerson.EdgeClient.Graph.Models
 
     public class EntityProperty
     {
-        public string Type { get; set; }
-        public object Value { get; set; }
+        public required string Type { get; set; }
+        public required object Value { get; set; }
+        public string? History { get; set; }
+        public string? Timestamp { get; set; }
     }
 
     public class RelationshipProperties

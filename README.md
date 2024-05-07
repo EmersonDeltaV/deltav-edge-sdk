@@ -47,13 +47,13 @@ var user = "user"; //add your REST API username here
 var pass = "pass"; //add your REST API password here
 
 client.BaseAddress = new Uri(edgeUrl);
-var token = await edgeClient.RequestClientTokenAsync(new Emerson.EdgeClient.Authentication.Models.Credentials()
-        {
-            Username = user,
-            Password = pass
-        });
+var token = await client.RequestClientTokenAsync(new Emerson.EdgeClient.Authentication.Models.Credentials()
+{
+    Username = user,
+    Password = pass
+});
 
-edgeClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token.AccessToken);
+client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token.AccessToken);
 
 ```
 
@@ -91,7 +91,7 @@ var history = await client.GetAeAsync(pageSize, pageNumber);
 ```
 
 # Sample Clients
-You may check our sample codes to understand how it works.
+Check out our sample code here to learn more.
   * [ConsoleApp](./samples/ConsoleApp/readme.md)
 
 # Authors
