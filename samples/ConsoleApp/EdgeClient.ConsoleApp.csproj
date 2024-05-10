@@ -9,9 +9,9 @@
 
   <ItemGroup>
     <PackageReference Include="DeltaV.EdgeClient.AE" Version="0.1.1" />
-    <PackageReference Include="DeltaV.EdgeClient.Authentication" Version="0.1.0" />
-    <PackageReference Include="DeltaV.EdgeClient.Graph" Version="0.1.0" />
-    <PackageReference Include="DeltaV.EdgeClient.History" Version="0.1.0" />
+    <PackageReference Include="DeltaV.EdgeClient.Authentication" Version="0.1.1" />
+    <PackageReference Include="DeltaV.EdgeClient.Graph" Version="0.1.1" />
+    <PackageReference Include="DeltaV.EdgeClient.History" Version="0.1.1" />
   </ItemGroup>
 
 </Project>
